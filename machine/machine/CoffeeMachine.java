@@ -3,7 +3,7 @@ package machine;
 import java.util.Scanner;
 
 /**
- * Klasa symulujaca prace automatu do sprzedazy kawy
+ * Class simulating work of coffee selling machine
  */
 public class CoffeeMachine {
     static boolean exit = false;
@@ -17,7 +17,7 @@ public class CoffeeMachine {
             coffeeMachine.setAction(scanner.nextLine());
             switch (coffeeMachine.action) {
                 case "buy": {
-                    Purchase.buy();
+                    Purchase.buyDrink();
                     break;
                 }
                 case "fill": {
