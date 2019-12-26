@@ -2,7 +2,7 @@ package machine;
 
 import static machine.CoffeeMachine.makeMainMethod;
 
-public class Program {
+public class Main {
 
     public static void main(String[] args) {
 

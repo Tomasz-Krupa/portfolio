@@ -9,6 +9,10 @@ public class CoffeeMachine {
     static boolean exit = false;
     private String action;
 
+    /**
+     * Make action chosen by user as input
+     * "exit" - finishes the programme
+     */
     static void makeMainMethod(CoffeeMachine coffeeMachine) {
         Scanner scanner = new Scanner(System.in);
 
