@@ -1,4 +1,4 @@
-package com.company;
+package EnglishWords;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -10,7 +10,7 @@ import java.util.Scanner;
  */
 public class EnglishWordsQuiz {
 
-    private static List<Question> list = new ArrayList<>();
+    private static List<EnglishWords.Question> list = new ArrayList<>();
 
     public static void main(String[] args) {
         // dodanie pytań do listy
