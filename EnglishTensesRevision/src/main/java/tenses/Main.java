@@ -1,9 +1,9 @@
-package org.example;
+package tenses;
 
 import java.sql.Connection;
 import java.sql.SQLException;
 
-public class Tenses {
+public class Main {
 
     public static void main(String[] args) throws SQLException {
 
@@ -11,5 +11,6 @@ public class Tenses {
         QuestionRepository questionRepository = new QuestionRepository(connection);
         questionRepository.loadQuestions();
         questionRepository.askQuestions();
+        connection.close();
     }
 }

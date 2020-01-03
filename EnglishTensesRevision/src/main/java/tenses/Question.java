@@ -1,4 +1,4 @@
-package org.example;
+package tenses;
 
 import lombok.Getter;
 import lombok.Setter;

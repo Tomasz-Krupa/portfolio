@@ -1,4 +1,4 @@
-package org.example;
+package tenses;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

@@ -1,4 +1,4 @@
-package org.example;
+package tenses;
 
 import java.sql.Connection;
 import java.sql.ResultSet;
@@ -46,13 +46,13 @@ public class QuestionRepository {
         int answered = 0;
         int answeredCorrectly = 0;
         System.out.println("WYBIERZ WŁASCIWĄ ODPOWIEDŹ (A,B, C lub D).");
+        Scanner scanner = new Scanner(System.in);
 
         for (int i = 0; i < 3; i++) {
             Random random = new Random();
             int randomNumber = random.nextInt(questions.size());
             System.out.println(questions.get(randomNumber).toString());
-            Scanner s = new Scanner(System.in);
-            String answer = s.next();
+            String answer = scanner.next();
             answered++;
             if (answer.equalsIgnoreCase(questions.get(randomNumber).getRightAnswer())) {
                 answeredCorrectly++;
@@ -61,6 +61,8 @@ public class QuestionRepository {
                 System.out.println("ŻLE :(");
             }
         }
+        scanner.close();
         System.out.println("Koniec testu. Odpowiedziałaś/-łeś poprawnie na " + answeredCorrectly + " z " + answered + " pytań.");
+
     }
 }
