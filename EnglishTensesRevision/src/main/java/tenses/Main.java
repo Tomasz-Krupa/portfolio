@@ -10,7 +10,6 @@ public class Main {
 
         try (Connection connection = DBconnector.connect()) {
             QuestionRepository questionRepository = new QuestionRepository(connection);
-            QuestionProvider questionProvider = new QuestionProvider();
             boolean finish = false;
 
             while (finish == false) {
